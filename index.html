@@ -22,7 +22,7 @@ setTimeout("codefans()",20000);
 <body>
 <div id="playerCnt" style="width:100%;height:100%;"></div>
 <script>
-var urls = getPar('url');
+var urls = decodeURIComponent(getPar('url'));
 var player = new Playerjs({   
     id:"playerCnt",
     autoplay : 1, 
