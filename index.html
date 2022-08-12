@@ -31,8 +31,8 @@ iframe {
 
 <script>
 
-var url = decodeURIComponent(getPar('url'));
-var api = 'http://106.55.241.74:1000/' + decodeURIComponent(getPar('type')) + '/';
+var url = b64Encode(decodeURIComponent(getPar('url')));
+var api = 'http://106.55.241.74:1000/' + getPar('type') + '/';
 
 let player = null;
 function b64Encode(str) {
